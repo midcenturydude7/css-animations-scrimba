@@ -1,0 +1,14 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}/*# sourceMappingURL=styles.css.map */
