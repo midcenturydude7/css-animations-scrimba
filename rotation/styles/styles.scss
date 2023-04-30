@@ -13,6 +13,7 @@ h1 {
   height: 50px;
   background: red;
   border: 1px solid black;
+  border-top: 3px solid yellow;
   animation-name: transform;
   animation-duration: 2s;
   animation-iteration-count: 3;
@@ -20,6 +21,6 @@ h1 {
 
 @keyframes transform {
   100% {
-    transform: translate(50%, 25%);
+    transform: skewY(25deg);
   }
 }
