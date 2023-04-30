@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.box {
+  width: 10px;
+  height: 10px;
+  background: blue;
+  border: 1px solid black;
+  animation: supersize 2s ease-out 0s 4 alternate both;
+}
+
+@keyframes supersize {
+  from {
+    transition: none;
+  }
+  50% {
+    width: 25px;
+    height: 25px;
+    background: red;
+  }
+  to {
+    width: 50px;
+    height: 50px;
+    background: green;
+  }
+}/*# sourceMappingURL=styles.css.map */
