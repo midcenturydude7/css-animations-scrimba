@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  opacity: 0;
+}
+
+.box {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: red;
+  border: 1px solid black;
+  border-top: 3px solid yellow;
+  animation-name: transform;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+}
+
+@keyframes transform {
+  100% {
+    transform: skewY(25deg);
+  }
+}/*# sourceMappingURL=styles.css.map */
