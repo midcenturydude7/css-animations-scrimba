@@ -1,2 +1,46 @@
-@import "../../../base.scss";
+// @import "../../../base.scss";
 
+body {
+  margin: 0;
+  background: #242423;
+}
+
+.logo {
+}
+
+.box {
+  height: 30px;
+  width: 30px;
+
+  animation-name: skewed;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 2;
+  animation-fill-mode: both;
+}
+
+.box-red {
+  background: #ff4d4d;
+  margin: 0;
+}
+
+.box-blue {
+  background: #738cff;
+  margin: 0;
+}
+
+.box-green {
+  background: #46ff36;
+  margin: 0;
+}
+
+.box-orange {
+  background: #ffaf24;
+  margin: 0;
+}
+
+@keyframes skewed {
+  100% {
+    transform: translate(50vw, 50vh) scaleX(10) skew(60deg, 20deg);
+  }
+}
