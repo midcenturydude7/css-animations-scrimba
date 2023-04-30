@@ -18,11 +18,10 @@ body {
   height: 50px;
   background: red;
   border: 1px solid black;
-  animation-name: grow;
-  animation-duration: 2s;
+  animation: first-animation 1s ease 0s 2 alternate;
 }
 
-@keyframes grow {
+@keyframes first-animation {
   from {
     width: 100px;
     height: 100px;
