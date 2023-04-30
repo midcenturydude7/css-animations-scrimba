@@ -16,10 +16,16 @@ body {
 
 h1 {
   color: darkblue;
+  font-size: 2.25rem;
   cursor: pointer;
+  transition-property: font-size;
+  transition-duration: 0.5s;
+  transition-delay: 1s;
+  transition-timing-function: ease;
 
   &:hover {
-    color: aqua;
+    color: green;
     font-size: 2.5rem;
+    letter-spacing: 0.2rem;
   }
 }
