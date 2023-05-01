@@ -20,8 +20,8 @@ body {
 
 .hover-text {
   transition: all 0.5s;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
 }
-
 .hover-text:hover {
   color: var(--main-color);
   font-size: 20px;
@@ -33,7 +33,7 @@ body {
   height: var(--box-unit);
   background: red;
   border: 1px solid black;
-  animation: size-down ease-out 0.5s 3 alternate both;
+  animation: size-down cubic-bezier(1, 0, 1, 1) 0.5s 3 alternate both;
 }
 
 @keyframes size-down {
