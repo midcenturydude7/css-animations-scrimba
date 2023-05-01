@@ -29,6 +29,7 @@ body {
   background: red;
   border: 1px solid black;
   animation: size-down ease-out 0.5s 5 alternate both;
+  -prefix-animation: size-down ease-out 0.5s 5;
 }
 
 @keyframes size-down {
